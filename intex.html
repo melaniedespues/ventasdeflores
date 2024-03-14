@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<head>
+    <title>Omorfia</title>
+</head>
+<!--fondo-->
+<body>
+    <body style="background-color:#EDFFFC;"></body>
+<style>
+    body {
+      background-image:url(https://i.ibb.co/vBRygBC/rosa-y-verde.jpg);
+    
+      background-repeat: no-repeat;
+      background-size:100% 90%;
+    }
+    </style>
+    <!--colores de los botones-->
+     <style>
+      .btn {
+       border: none;
+     background-color: #4aaaba;
+     font-size: 14px;
+     margin-right: 2px;
+     margin-left: 40px;
+     padding-top: 2px;
+     padding-right: 15px;
+     padding-bottom: 2px;
+     padding-left: 15px;
+     }
+   .btn:hover {background: #f74242;}
+   .Comprar {color: rgb(255, 255, 255);}
+     </style>
+    <br>
+    <br>
+    <br>
+<!--Logotipo y descripcion-->
+<div>
+  <center>
+      <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <h2 style="color:rgb(255, 255, 255);">El mejor regalo que le puedes dar a esa persona especial es una experiencia innolvidable.</h2>
+  <p style="font-size:large;color:rgb(255, 225, 0);">Somos más que una simple tienda de flores; somos un servicio completo que ofrece la entrega de flores frescas y hermosas arreglos florales.<br> Contamos con flores, ramos, esencias y adornos florales.<br>
+    Si las flores transmiten emociones, puedes aprovechar para sorpreder a esa persona especial con Omorfia.</p>
+</center>
+  </center>
+</div>
+</div>
+</body>
+<br>
+<br>
+<br>
+<p style="font-size:300%;">Colecciones...</p>
+<hr>
+<p style="font-size:250%;">Flores</p>
+<hr>
+ <!--Tulipanes-->
+<table border="1" style="float: left;" width="49%">
+  <tr>
+    <td> <div style="display:inline-block;vertical-align:top;">
+      <img src="https://m.media-amazon.com/images/I/81fPRYsrS5L.jpg"
+      width="320"height="290"alt="img"/>
+  </div>
+  <div style="display:inline-block;">
+      <center>
+      <p style="font-size:150%;">TULIPANES</p>
+      </center>
+      <p style="font-size:large;">
+          Maceta de 4 tulipanes
+        </p>
+        <p style="font-size:large;">
+          PRECIO: $370.00
+        </p>
+      <p style="font-size:large;">
+        COLORES: Rojo, amarrillo, violeta, rosado,<br> blanco.
+      </p>
+      <p style="font-size:large;">
+        TAMAÑO: 45 a 60 cm de.
+      </p>
+      <p style="font-size:large;">
+          AROMA: Fresco y cremoso.
+        </p>   
+  <button class="btn Comprar" id="tulipan">Comprar</button>
+  <script>
+    const tulipan = document.getElementById("tulipan");
+    tulipan.addEventListener("click", function() {
+    const p=370;
+    var resultado,n,r;
+    resultado = window.confirm('¿Estas seguro de comprar Tulipanes?');
+  if (resultado === true) {
+      n=parseInt(prompt( "¿Cuantas macetas de tulipanes quieres?"));
+      c=prompt("¿Que color de tulipanes desea?");
+      r=p*n;
+      const orderDetails = n+" Maceta de tulipanes "+c;
+      const deliveryTime = "Su pago es de $"+r;
+      const alertMessage = `Has comprado
+  ${orderDetails}
+  ${deliveryTime}`
+  alert(alertMessage);
+  window.alert('Gracias por comprar en Omorfia');
+  } else { 
+      window.alert('Compra cancelada');
+  }});
+  </script>
+  </div></td>
+  </tr>
+  </table>
+<!--gardenia-->
+<table border="1" width="49%" align="right">
+  <tr>
+    <td> <div style="display:inline-block;vertical-align:top;">
+      <img src=https://th.bing.com/th/id/R.5b3279e616f6f0853df97ad1142a62b1?rik=pwMAy4Is791PfA&riu=http%3a%2f%2fwww.guiadejardineria.com%2fwp-content%2fuploads%2f2016%2f02%2fcultivar-gardenias-en-maceta-01-e1456312509253.jpg&ehk=jOe1szoPRDz%2b4b0oa0r5P9RwvKs0qCJty2idpnh8YoE%3d&risl=&pid=ImgRaw&r=0 
+      width="280"height="290"alt="img"/>
+  </div>
+  <div style="display:inline-block;">
+      <center>
+      <p style="font-size:150%;">GARDENIAS</p>
+      </center>
+        <p style="font-size:large;">
+          PRECIO: $690.00
+        </p>
+      <p style="font-size:large;">
+        COLORES: Blanco y amarrillo.
+      </p>
+      <p style="font-size:large;">
+        TAMAÑO: 60 a 200 cm.
+      </p>
+      <p style="font-size:large;">
+          AROMA: Dulce.
+        </p>
+        <button class="btn Comprar" id="gardenia">Comprar</button>
+        <script>
+          const gardenia = document.getElementById("gardenia");
+          gardenia.addEventListener("click", function() {
+          const p=690;
+          var  resultado,n,r;
+          resultado = window.confirm('¿Estas seguro de comprar Gardenias?');
+        if (resultado === true) {
+            n=parseInt(prompt( "¿Cuantas macetas de gardenia quieres?"));
+            c=prompt("¿Que color de gardenia desea?");
+            r=p*n;
+            const orderDetails = n+" Maceta de gardenias "+c;
+            const deliveryTime = "Su pago es de $"+r;
+            const alertMessage = `Has comprado
+        ${orderDetails}
+        ${deliveryTime}`
+        alert(alertMessage);
+        window.alert('Gracias por comprar en Omorfia');
+        } else { 
+            window.alert('Compra cancelada');
+        }});
+        </script>
+  </div></td>
+  </tr>
+  </table>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<hr>
+<!--fila2-->
+<!--orquideas-->
+<table border="1" style="float: left;" width="49%">
+  <tr>
+    <td> <div style="display:inline-block;vertical-align:top;">
+      <img src="https://http2.mlstatic.com/D_NQ_NP_833796-CBT72868951646_112023-O.webp" 
+      width="270"height="290"alt="img"/>
+  </div>
+  <div style="display:inline-block;">
+      <center>
+      <p style="font-size:150%;">ORQUIDEAS</p>
+      </center>
+      <p style="font-size:large;">
+          Maceta de 3 orquideas.
+        </p>
+        <p style="font-size:large;">
+          PRECIO: $590.00
+        </p>
+      <p style="font-size:large;">
+        COLORES: Rojo, amarrillo, morado, rosado,<br> blanco, verdes y naranja.
+      </p>
+      <p style="font-size:large;">
+        TAMAÑO: 20 a 76 cm de altura.
+      </p>
+      <p style="font-size:large;">
+          AROMA: Cremos, dulce, fresco.
+        </p>
+        <button class="btn Comprar" id="orquideas">Comprar</button>
+        <script>
+          const orquideas = document.getElementById("orquideas");
+          orquideas.addEventListener("click", function() {
+          const p=590;
+          var  resultado,n,r;
+          resultado = window.confirm('¿Estas seguro de comprar Orquideas?');
+        if (resultado === true) {
+            n=parseInt(prompt( "¿Cuantas macetas de orquideas quieres?"));
+            c=prompt("¿Que color de orquideas desea?");
+            r=p*n;
+            const orderDetails = n+" Maceta de orquideas "+c;
+            const deliveryTime = "Su pago es de $"+r;
+            const alertMessage = `Has comprado
+        ${orderDetails}
+        ${deliveryTime}`
+        alert(alertMessage);
+        window.alert('Gracias por comprar en Omorfia');
+        } else { 
+            window.alert('Compra cancelada');
+        }});
+        </script>
+  </div></td>
+  </tr>
+  </table> 
+<!--rosas-->
+<table border="1" width="49%" align="right">
+  <tr>
+    <td> <div style="display:inline-block;vertical-align:top;">
+      <img src="https://i5.walmartimages.com.mx/mg/gm/3pp/asr/63959133-1488-416c-aa17-dd6a9f2f23d2.421aa3843340e3be44076ccde8cbaff9.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF" 
+      width="310"height="285"alt="img"/>
+  </div>
+  <div style="display:inline-block;">
+      <center>
+      <p style="font-size:150%;">ROSAS</p>
+      </center>
+      <p style="font-size:large;">
+          Maceta de 3 rosas
+        </p>
+        <p style="font-size:large;">
+          PRECIO: $180.00
+        </p>
+      <p style="font-size:large;">
+        COLORES: Rojo, amarrillo, naranja, rosado,<br> blanco.
+      </p>
+      <p style="font-size:large;">
+        TAMAÑO: 20  a 1,3m de altura.
+      </p>
+      <p style="font-size:large;">
+          AROMA:Dulce.
+        </p>
+        <button class="btn Comprar" id="rosas">Comprar</button>
+        <script>
+          const rosas = document.getElementById("rosas");
+          rosas.addEventListener("click", function() {
+            const p=180;
+          var resultado,n,r;
+          resultado = window.confirm('¿Estas seguro de comprar Rosas?');
+        if (resultado === true) {
+            n=parseInt(prompt( "¿Cuantas macetas de rosas quieres?"));
+            c=prompt("¿Que color de rosas desea?");
+            r=p*n;
+            const orderDetails = n+" Macetas de rosas "+c;
+            const deliveryTime = "Su pago es de $"+r;
+            const alertMessage = `Has comprado
+        ${orderDetails}
+        ${deliveryTime}`
+        alert(alertMessage);
+        window.alert('Gracias por comprar en Omorfia');
+        } else { 
+            window.alert('Compra cancelada');
+        }});
+        </script>
+  </div></td>
+  </tr>
+  </table>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<hr>
+<!--fila3-->
+<!--Dalia-->
+<table border="1" style="float: left;" width="49%">
+  <tr>
+    <td> <div style="display:inline-block;vertical-align:top;">
+      <img src="https://http2.mlstatic.com/D_NQ_NP_677717-MLB69625125574_052023-O.webp" 
+      width="290"height="290"alt="img"/>
+  </div>
+  <div style="display:inline-block;">
+      <center>
+      <p style="font-size:150%;">DALIA</p>
+      </center>
+      <p style="font-size:large;">
+          Maceta de 3 dalias.
+        </p>
+        <p style="font-size:large;">
+          PRECIO: $210.00
+        </p>
+      <p style="font-size:large;">
+        COLORES: Rojo, amarrillo, morado, rosado,<br> blanco y naranja.
+      </p>
+      <p style="font-size:large;">
+        TAMAÑO: 30 cm de altura.
+      </p>
+      <p style="font-size:large;">
+          AROMA: Dulce, fresco.
+        </p>
+        <button class="btn Comprar" id="dalia">Comprar</button>
+        <script>
+          const dalia = document.getElementById("dalia");
+          dalia.addEventListener("click", function() {
+          const p=210;
+          var resultado,n,r;
+          resultado = window.confirm('¿Estas seguro de comprar Dalias?');
+        if (resultado === true) {
+            n=parseInt(prompt( "¿Cuantas macetas de dalias quieres?"));
+            c=prompt("¿Que color de dalias desea?");
+            r=p*n;
+            const orderDetails = n+" Maceta de dalias "+c;
+            const deliveryTime = "Su pago es de $"+r;
+            const alertMessage = `Has comprado
+        ${orderDetails}
+        ${deliveryTime}`
+        alert(alertMessage);
+        window.alert('Gracias por comprar en Omorfia');
+        } else { 
+            window.alert('Compra cancelada');
+        }});
+        </script>
+  </div></td>
+  </tr>
+  </table>
+<!--Girasol-->
+<table border="1" width="49%" align="right">
+  <tr>
+    <td> <div style="display:inline-block;vertical-align:top;">
+      <img src="https://static.vecteezy.com/system/resources/previews/026/497/888/non_2x/sunflower-in-a-pot-ai-generated-free-photo.jpg" 
+      width="270"height="290"alt="img"/>
+  </div>
+  <div style="display:inline-block;">
+      <center>
+      <p style="font-size:150%;">GIRASOL</p>
+      </center>
+        <p style="font-size:large;">
+          PRECIO: $160.00
+        </p>
+      <p style="font-size:large;">
+        COLORES:Amarrillo y naranja
+      </p>
+      <p style="font-size:large;">
+        TAMAÑO: 30cm a 1,5m de altura.
+      </p>
+      <p style="font-size:large;">
+          AROMA: Refinado.
+        </p>
+        <button class="btn Comprar" id="girasol">Comprar</button>
+        <script>
+          const girasol = document.getElementById("girasol");
+          girasol.addEventListener("click", function() {
+          const p=160;
+          var resultado,n,r;
+          resultado = window.confirm('¿Estas seguro de comprar un Girasol?');
+        if (resultado === true) {
+            n=parseInt(prompt( "¿Cuantas macetas de girasol quieres?"));
+            c=prompt("¿Que color de girasol desea?");
+            r=p*n;
+            const orderDetails = n+" Maceta de girasol "+c;
+            const deliveryTime = "Su pago es de $"+r;
+            const alertMessage = `Has comprado
+        ${orderDetails}
+        ${deliveryTime}`
+        alert(alertMessage);
+        window.alert('Gracias por comprar en Omorfia');
+        } else { 
+            window.alert('Compra cancelada');
+        }});
+        </script>
+  </div></td>
+  </tr>
+  </table>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<hr>
+<!--Esencias-->
+<hr>
+<p style="font-size:250%;">Esencias</p>
+<hr>
+<!--masculino-->
+  <table border="1" style="float: left;" width="45%">
+    <tr>
+      <th colspan="3" rowspan="1"
+      style="vertical-align:middle;background-color:rgb(159, 172, 164);text-align:center;">Masculino<br>
+       </th>
+    </tr>
+    <tr>
+      <td><center>$299</center><br>
+        <button class="btn Comprar" id="olor1">Comprar</button>
+        <script>
+          const olor1 = document.getElementById("olor1");
+          olor1.addEventListener("click", function() {
+          const p=299;
+          var resultado,n,r;
+          resultado = window.confirm('¿Estas seguro de comprar el Bleu Intense Night?');
+        if (resultado === true) {
+            n=parseInt(prompt( "¿Cuantas ensencias de Bleu Intense Night quieres?"));
+            r=p*n;
+            const orderDetails =n+" Esencia Bleu Intense Night L´BelForma de 100ml ";
+            const deliveryTime = "Su pago es de $"+r;
+            const alertMessage = `Has comprado
+        ${orderDetails}
+        ${deliveryTime}`
+        alert(alertMessage);
+        window.alert('Gracias por comprar en Omorfia');
+        } else { 
+            window.alert('Compra cancelada');
+        }});
+        </script>
+      </td>
+      <td>Bleu Intense Night de la Marca L´BelForma,<br> Líquido de 100 mililitros para adulto.</td>
+      <td><img src="https://m.media-amazon.com/images/I/51VZ1Q8zMZL.AC_SX679.jpg" alt="" height=100 width=100 /></td>
+    </tr>
+    <tr>
+      <td><center>$599</center><br>
+        <button class="btn Comprar" id="olor2">Comprar</button>
+        <script>
+          const olor2 = document.getElementById("olor2");
+          olor2.addEventListener("click", function() {
+          const p=599;
+          var resultado,n,r;
+          resultado = window.confirm('¿Estas seguro de comprar el AROMATIC STAR ANISE?');
+        if (resultado === true) {
+            n=parseInt(prompt( "¿Cuantas ensencias de AROMATIC STAR ANISE quieres?"));
+            r=p*n;
+            const orderDetails = n+" Esencia AROMATIC STAR ANISE de 50ml";
+            const deliveryTime = "Su pago es de $"+r;
+            const alertMessage = `Has comprado
+        ${orderDetails}
+        ${deliveryTime}`
+        alert(alertMessage);
+        window.alert('Gracias por comprar en Omorfia');
+        } else { 
+            window.alert('Compra cancelada');
+        }});
+        </script>
+      </td>
+      <td>AROMATIC STAR ANISE, liquido de 50<br> mililitros para adulto</td>
+      <td height=80 width=80><img src="https://www.dossier.mx/cdn/shop/files/Simple-AromaticStarAnise.png?v=1705327862" alt="" height=100 width=100 /></td>
+    </tr>
+    </table>
+    <!--femenino-->
+    <table border="1" width="45%" align="right">
+      <tr>
+        <th colspan="3" rowspan="1"
+        style="vertical-align:middle;background-color:rgb(166, 233, 192);text-align:center;">Femenino<br>
+         </th>
+      </tr>
+      <tr>
+        <td><center>$230</center><br>
+          <button class="btn Comprar" id="olor3">Comprar</button>
+        <script>
+          const olor3 = document.getElementById("olor3");
+          olor3.addEventListener("click", function() {
+          const p=230;
+          var resultado,n,r;
+          resultado = window.confirm('¿Estas seguro de comprar el FRUITY ALMOND?');
+        if (resultado === true) {
+            n=parseInt(prompt( "¿Cuantas ensencias de FRUITY ALMOND quieres?"));
+            r=p*n;
+            const orderDetails = n+" Esencia FRUITY ALMOND de 50ml";
+            const deliveryTime = "Su pago es de $"+r;
+            const alertMessage = `Has comprado
+        ${orderDetails}
+        ${deliveryTime}`
+        alert(alertMessage);
+        window.alert('Gracias por comprar en Omorfia');
+        } else { 
+            window.alert('Compra cancelada');
+        }});
+        </script>
+        </td>
+        <td>FRUITY ALMOND, liquido de 50 mililitros</td>
+        <td><img src="https://www.dossier.mx/cdn/shop/files/Simple-FruityAlmond.png?v=1705310241" alt="" height=100 width=100 /></td>
+      </tr>
+      <tr>
+        <td><center>$359</center>
+          <button class="btn Comprar" id="olor4">Comprar</button>
+          <script>
+            const olor4 = document.getElementById("olor4");
+            olor4.addEventListener("click", function() {
+              const p=359;
+              var resultado,n,r;
+              resultado = window.confirm('¿Estas seguro de comprar el Bad Girl?');
+          if (resultado === true) {
+              n=parseInt(prompt( "¿Cuantas ensencias de Bad Girl quieres?"));
+              r=p*n;
+              const orderDetails = n+" Esencia Bad Girl de 100ml";
+              const deliveryTime = "Su pago es de $"+r;
+              const alertMessage = `Has comprado
+          ${orderDetails}
+          ${deliveryTime}`
+          alert(alertMessage);
+          window.alert('Gracias por comprar en Omorfia');
+          } else { 
+              window.alert('Compra cancelada');
+          }});
+          </script>
+        </td>
+        <td>Bad Girl, liquido de 100 mililitros</td>
+        <td height=100 width=100><img src="https://http2.mlstatic.com/D_NQ_NP_2X_826341-MLM46558785886_062021-F.webp" alt="" height=100 width=100 /></td>
+      </tr>
+    </table>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <hr>
+    <p style="font-size:250%;">Ramos</p>
+    <p style="font-size:150%;">Conoce los precios por flor, si se desea agregar productos o regalos el precio se negociara...</p>
+    <hr>
+    <table border="1" width="20%" style="float: left;">
+    <tr>
+      <td>Tulipan</td>
+      <td>$50</td>
+      <td><img src="https://homeandhistory.com/46435-superlarge_default/flor-tulipan.jpg" alt="" height=50 width=50 /></td>
+    </tr>
+    <tr>
+      <td>Girasol</td>
+      <td>$20</td>
+      <td><img src="https://th.bing.com/th/id/OIP.Qe_3U-gJSefSNEU2SNb06AHaHa?w=600&h=600&rs=1&pid=ImgDetMain" alt="" height=50 width=50 /></td>
+    </tr>
+    <tr>
+      <td>Rosa</td>
+      <td>$15</td>
+      <td><img src="https://www.21-draw.com/wp-content/uploads/2023/08/choose-a-reference-image-e1692607996568-914x1024.jpg" alt="" height=50 width=50 /></td>
+    </tr>
+    <tr>
+      <td>Dalia</td>
+      <td>$25</td>
+      <td><img src="https://static.vecteezy.com/system/resources/previews/012/896/741/non_2x/dahlia-transparent-background-free-png.png" alt="" height=50 width=50 /></td>
+    </tr>
+    <tr>
+      <td>Adornos</td>
+      <td>$90</td>
+      <td><img src="https://http2.mlstatic.com/D_NQ_NP_908174-MCO72245206840_102023-O.webp" alt="" height=50 width=50 /></td>
+  </table>
+</table>
+<!--Ramo1-->
+<table border="1" width="49%" align="right">
+  <tr>
+    <td> <div style="display:inline-block;vertical-align:top;">
+      <img src="https://th.bing.com/th/id/OIP.DB7KzrAbTOy2dIeDwVV20AAAAA?rs=1&pid=ImgDetMain"
+      width="280"height="290"alt="img"/>
+  </div>
+  <div style="display:inline-block;">
+      <center>
+      <p style="font-size:150%;">MIXTO</p>
+      </center>
+        <p style="font-size:large;">
+          PRECIO: $367.00
+        </p>
+      <p style="font-size:large;">
+        COLORES:Claros.
+      </p>
+      <button class="btn Comprar" id="ramo1">Comprar</button>
+      <script>
+        const ramo1 = document.getElementById("ramo1");
+        ramo1.addEventListener("click", function() {
+          const p=367;
+          var resultado,n,r;
+          resultado = window.confirm('¿Estas seguro de comprar el ramo mixto?');
+      if (resultado === true) {
+        n=parseInt(prompt( "¿Cuantos ramos mixto quieres?"));
+        r=p*n;
+          const orderDetails = n+" Ramos mixtos";
+          const deliveryTime = "Su pago es de $"+r;
+          const alertMessage = `Has comprado
+      ${orderDetails}
+      ${deliveryTime}`
+      alert(alertMessage);
+      window.alert('Gracias por comprar en Omorfia');
+      } else { 
+          window.alert('Compra cancelada');
+      }});
+      </script>
+  </div></td>
+  </tr>
+  </table>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<hr>
+<!--Ramo2-->
+<table border="1" width="49%" align="right">
+  <tr>
+    <td> <div style="display:inline-block;vertical-align:top;">
+      <img src="https://admin.lacasadelasflores.com/Imagenes/a113f8664f1413c6120e40e15936d95b_c48103a491ecf8944924e00a1aebef16"
+      width="280"height="290"alt="img"/>
+  </div>
+  <div style="display:inline-block;">
+      <center>
+      <p style="font-size:150%;">GIRASOLES</p>
+      </center>
+        <p style="font-size:large;">
+          PRECIO: $320.00
+        </p>
+      <p style="font-size:large;">
+        COLORES:Amarrillo.
+      </p>
+      <button class="btn Comprar" id="ramo2">Comprar</button>
+      <script>
+        const ramo2 = document.getElementById("ramo2");
+        ramo2.addEventListener("click", function() {
+          const p=320;
+          var resultado,n,r;
+          resultado = window.confirm('¿Estas seguro de comprar un ramo de girasoles?');
+      if (resultado === true) {
+        n=parseInt(prompt( "¿Cuantos ramos de girasoles quieres?"));
+        r=p*n;
+          const orderDetails = n+" Ramos de girasoles";
+          const deliveryTime = "Su pago es de $"+r;
+          const alertMessage = `Has comprado
+      ${orderDetails}
+      ${deliveryTime}`
+      alert(alertMessage);
+      window.alert('Gracias por comprar en Omorfia');
+      } else { 
+          window.alert('Compra cancelada');
+      }});
+      </script>
+  </div></td>
+  </tr>
+  </table>
+<!--Ramo3-->
+<table border="1" width="49%" style="float: left;">
+  <tr>
+    <td> <div style="display:inline-block;vertical-align:top;">
+      <img src="https://www.sisayonline.com/wp-content/uploads/2016/10/20190108_210409918_iOS-600x600.jpeg"
+      width="310"height="290"alt="img"/>
+  </div>
+  <div style="display:inline-block;">
+      <center>
+      <p style="font-size:150%;">ROSAS</p>
+      </center>
+        <p style="font-size:large;">
+          PRECIO: $519.00
+        </p>
+      <p style="font-size:large;">
+        COLORES:Rojo.
+      </p>
+      <button class="btn Comprar" id="ramo3">Comprar</button>
+      <script>
+        const ramo3 = document.getElementById("ramo3");
+        ramo3.addEventListener("click", function() {
+          const p=519;
+          var resultado,n,r;
+          resultado = window.confirm('¿Estas seguro de comprar el ramo de Rosas?');
+      if (resultado === true) {
+          n=parseInt(prompt( "¿Cuantos ramos de Rosas quieres?"));
+          r=p*n;
+          const orderDetails = n+" Ramo de rosas";
+          const deliveryTime = "Su pago es de $"+r;
+          const alertMessage = `Has comprado
+      ${orderDetails}
+      ${deliveryTime}`
+      alert(alertMessage);
+      window.alert('Gracias por comprar en Omorfia');
+      } else { 
+          window.alert('Compra cancelada');
+      }});
+      </script>
+  </div></td>
+  </tr>
+  </table>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<hr>
+
+<iframe width="490" height="290" src="https://www.youtube.com/embed/Skov5WItyE4" title="Colección Vibranza de ésika" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+<p style="float: left;font-size:150%;"">¡Contactanos! a nuestro whatsapp al 272 190 4578 <br> o a nuestro correo omorfiaflora10@gmail.com</p>
+</html>
